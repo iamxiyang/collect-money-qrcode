@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>收款二维码</title>
+    <link rel="stylesheet" href="./statics/css/pay.css">
+    <script src="./statics/js/qrcode.min.js"></script>
+    <script src="./statics/js/pay.js"></script>
+</head>
+<body class="pay-body">
+
+<div id="pay-content">
+    <div id="qrcode"></div>
+    <p id="pc-tip">请使用手机 <strong>微信/QQ/支付宝</strong> 扫码完成支付</p>
+    <p id="mobile-tip">
+        请：长按识别、输入金额、完成支付
+    </p>
+</div>
+
+<script>
+    new Pay({
+        qqQrcode: 'https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&f=wallet&a=1&ac=CAEQ8ovKHhiU9uv2BQ%3D%3D_xxx_sign&u=64128498&n=%E4%BD%95%E5%96%9C%E9%98%B3',
+        wechatQrcode: 'wxp://f2f0VGHEdx-Na35h3P7LO5KuztAu4zgs8NCD',
+        alipayQrcode: 'https://qr.alipay.com/fkx18105cuuz5u6xmozlba7',
+        contact: '如果支付存在问题，请联系QQ64128498',
+        alipayID: '',
+        alipayMoney: '',
+        alipayNote: '扫码支付'
+    })
+</script>
+</body>
+</html>

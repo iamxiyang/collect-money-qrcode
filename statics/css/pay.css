@@ -1,0 +1,28 @@
+.pay-body {
+  padding: 0;
+  margin: 0;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+}
+.pay-body #pay-content {
+  display: none;
+  text-align: center;
+  max-width: 700px;
+  margin: 18vh auto;
+  padding: 10vh 4vw;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 0 10px 0 #d0d0d0;
+}
+.pay-body #pay-content img {
+  margin: auto;
+}
+.pay-body #pay-content canvas {
+  display: none !important;
+}
+.pay-body #pay-content p {
+  display: none;
+  margin-top: 4vh;
+}
+
+/*# sourceMappingURL=pay.css.map */
